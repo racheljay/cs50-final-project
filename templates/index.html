@@ -2,9 +2,11 @@
 
 {% block main %}
 
-<h3>working</h3>
-<button id="click" class="btn btn-info">Click</button>
-<p id="readout">0</p>
+<button id="timer" class="btn btn-success">Start Timer</button>
+<button id="action" class="btn btn-info">Click</button>
+<button id="stop" class="btn btn-danger">Stop</button>
+<p id="clickCount">0</p>
+<p id="time">5</p>
 
 <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
 {% endblock %}
